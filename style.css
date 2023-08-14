@@ -1,0 +1,82 @@
+
+.body{
+    /* reset standard */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+#calc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-height: 50vh;
+
+
+}
+
+.container{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: #2F2F2F 10px solid;
+    border-radius: 10px;
+    flex-basis: 400px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex: 0 1 400px;
+    min-width: 200px;
+}
+
+.display {
+    background-color: #b2b9b7;
+    color: #000000;
+    font-size: 3rem;
+    padding: 1rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.container-btns {
+    display:flex;
+    flex-wrap: wrap;
+    flex: 0 1 100%;
+}
+
+button{
+    color: #ffffff;
+    background-color: #2f2f2f;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 0 1 25%;
+}
+
+.modifier{
+    background-color: #2f52da;
+}
+
+.operator, .eval{
+    background-color: orange
+}
+
+.operand{
+    background-color: rgb(0, 99, 71);
+}
+
+/* make #zero button expand to be twice the size as other buttons */
+button#zero{
+    flex: 0 1 50%;
+}
+
+button:active{
+    background-color: #000000;
+    color: #ffffff;
+}
